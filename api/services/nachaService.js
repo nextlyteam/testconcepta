@@ -9,7 +9,7 @@ module.exports = {
  */
 function parseToCsv(input) {
   // The output initialized with the headers of CSV file
-  let output = '"BuyerID","BuyerName","SupplierID","SupplierName","InvoiceNumber","InvoiceDate","PaymentID","InvoiceAmount","DiscountAmount","PaymentAmount","Note"\n';
+  let output = '"BuyerID","BuyerName","SupplierID","SupplierName","InvoiceNumber","InvoiceDate","PaymentID","InvoiceAmount","DiscountAmount","PaymentAmount","Note"\n\r';
 
   // The values that was shared with more than one line
   let buyerName = '';
@@ -41,7 +41,7 @@ function parseToCsv(input) {
         const invoiceAmount = note.substring(note.lastIndexOf(' ') + 1);
         const discountAmount = '0.00'; // TODO: This value was not documented in the PDF.
         output +=
-          `"${buyerID}","${buyerName}","${supplierId}","${supplierName}","${invoiceNumber}","${invoiceDate}","${paymentId}","${invoiceAmount}","${discountAmount}","${invoiceAmount}","${note}"\n`;
+          `"${buyerID}","${buyerName}","${supplierId}","${supplierName}","${invoiceNumber}","${invoiceDate}","${paymentId}","${invoiceAmount}","${discountAmount}","${invoiceAmount}","${note}"\n\r`;
       }
     }
   })
