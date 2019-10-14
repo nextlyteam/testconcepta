@@ -1,5 +1,3 @@
-# testconcepta2
-
 a [Sails v1](https://sailsjs.com) application
 
 ## Get CSV of an input in NACHA Format.
