@@ -1,5 +1,10 @@
 a [Sails v1](https://sailsjs.com) application
 
+## Steps to run locally
+1. Run `npm install`
+2. Run `sails lift`
+3. Access the endpoint via http://localhost:1337/api/get-csv
+
 ## Get CSV of an input in NACHA Format.
 ```
 URL: POST {host}/api/get-csv
