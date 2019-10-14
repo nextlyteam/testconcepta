@@ -14,7 +14,7 @@ Body: {
 ```
 **This is an example using the public endpoint:**
 ```
-URL: POST https://testconcepta.herokuapp.com/api/get-travels
+URL: POST https://testconcepta.herokuapp.com/api/get-csv
 Body: {
   "input": ./input.txt
 }
